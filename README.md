@@ -98,7 +98,7 @@ You can run this project using either:
       ```
    2. To View the app in browser:
       ```bash
-         http://0.0.0.0:8501 or http://localhost:8501
+      http://0.0.0.0:8501 or http://localhost:8501
       ```
    3. Stop and clean up with:
       ```bash
