@@ -87,23 +87,23 @@ You can run this project using either:
 2. **Run the container:**  ## --env-file .env 
 
    ```bash
-   docker run -p 8501:8501 -e GROQ_API_KEY=<'GROQ_API_KEY'>  -it demo-custom-agent:latest_build
+   docker run -p 8501:8501 -e GROQ_API_KEY='<GROQ_API_KEY>'  -it demo-custom-agent:latest_build
    ```
-
+   Let's say port `8501`, as it is the default port used by Streamlit
 ### Using Docker Compose
 
-Build and start the service with:
-
-```bash
-docker-compose up --build
-```
-
-Stop and clean up with:
-
-```bash
-docker-compose down -v
-```
-
+   1. Build and start the service with:
+      ```bash
+      docker-compose up --build
+      ```
+   2. To View the app in browser:
+      ```bash
+         http://0.0.0.0:8501 or http://localhost:8501
+      ```
+   3. Stop and clean up with:
+      ```bash
+      docker-compose down -v
+      ```
 ---
 
 ## Notes
