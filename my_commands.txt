@@ -1,0 +1,50 @@
+docker build demo-custom-agent .
+docker build -t demo-custom-agent .
+docker images
+docker run -p 8501:8501 --env-file .env -it demo-custom-agent
+docker ps -a
+docker stop demo-custom-agent && docker rm demo-custom-agent
+docker stop 8ab47a1f0685  && docker rm 8ab47a1f0685
+docker ps -a
+docker images
+docker rmi 3d1fbfa23c90
+docker-compose up --build
+echo ".env" >> .gitignore
+docker-compose up --build
+docker images
+docker ps -a
+docker rmi f90ff145914c
+docker-compose down -v
+docker-compose up --build
+docker-compose down -v
+docker images
+docker rmi 2c57f0721d4c
+docker-compose down -v
+docker-compose up --build
+docker images
+docker rmi b59eb660d843
+docker ps -a
+docker stop pj-imp-dkr-streamlit-1 && docker rm pj-imp-dkr-streamlit-1
+docker 
+docker ps -a
+docker images
+docker rmi b59eb660d843
+docker-compose up --build
+docker images
+docker ps -a
+docker stop pj-imp-dkr-streamlit-1  && docker rm pj-imp-dkr-streamlit-1
+docker images
+docker rmi pj-imp-dkr-streamlit
+docker images
+docker-compose up
+docker images
+docker ps -aq
+docker-compose up --build
+docker images
+docker build -t demo-cutom-agent-dokz .
+docker -p 8501:8000 --env-file .env -it demo-cutom-agent-dokz
+docker run -p 8501:8000 --env-file .env -it demo-cutom-agent-dokz
+docker run -p 8501:8501 --env-file .env -it demo-cutom-agent-dokz
+docker run -p 8501:8501 --env-file .env demo-cutom-agent-dokz
+docker run -p 8000:8501 --env-file .env demo-cutom-agent-dokz
+doskey /history > my_commands.txt

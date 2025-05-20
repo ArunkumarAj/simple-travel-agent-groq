@@ -1,0 +1,14 @@
+# [INFO Lib]
+python-dotenv
+langchain
+streamlit
+# langchain-google-genai
+langchain_groq
+openai>=1.0.0
+
+
+# [INFO ENV] My Local Conda Env
+# venv-sprt-cht
+
+# [INFO ISSUE] To stop Conda from auto-activating the base environment:
+# conda config --set auto_activate_base false
