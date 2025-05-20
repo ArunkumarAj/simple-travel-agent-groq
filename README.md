@@ -13,40 +13,41 @@ Before using Docker, you can run the application locally for development or test
 
    ```bash
    conda create --name demo-agent-env python=3.11 -y
-   conda activate '<path>\demo-agent-env'
-   
+   conda activate '<path>\demo-agent-env'   
    ```
 
 1.2 Create and activate through pipenv:
-   a. Install Pipenv (if not already installed)
 
-      ```bash
-      pip install --user pipenv
-      
-      ```
+   a. Install Pipenv (if not already installed)
+   ```bash
+   pip install --user pipenv   
+   ```
    b. Initialize a Pipenv Environment:
-      1. Start with a Python version: >> This creates a virtual environment and a `Pipfile`.
+
+   1. Start with a Python version: >> This creates a virtual environment and a `Pipfile`.
    
-      ```bash
-      pipenv --python 3.11
-      
-      ```
-      2. Or just install your first package:
-      ```bash
-      pipenv install <package-name>
-      
-      ```
+         ```bash
+         pipenv --python 3.11         
+         ```
+
+   2. Or just install your first package:
+
+         ```bash
+         pipenv install <package-name>      
+         ```
+
       This auto-creates the virtual environment using your system’s default Python, and adds flask to the Pipfile.
 
-      3. Activate the Virtual Environment: >> `(myproject-abc123) PS C:\path\to\myproject>`
-      ```bash
-      pipenv shell
-      
-      ```
-      4. Exit the Shell
-      ```bash
-      exit
-      ```
+   3. Activate the Virtual Environment: >> `(myproject-abc123) PS C:\path\to\myproject>`
+
+         ```bash
+         pipenv shell
+         ```
+   4. Exit the Shell
+
+         ```bash
+         exit
+         ```
 
 2. Install the required Python packages:
 
@@ -116,7 +117,6 @@ docker-compose down -v
 ## Cleanup Commands
 
 - List containers:
-
   ```bash
   docker ps -a
   ```
@@ -150,12 +150,5 @@ docker-compose down -v
 echo ".env" >> .gitignore
 ```
 
----
-
-## License
-
-MIT License
-
----
 
 For detailed instructions, please refer to the full documentation in this repo.
